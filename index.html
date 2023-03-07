@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header container">
+        <div class=" header__cont">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="images/icons/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__adress">
+                <p>г. Санкт-Петербург, проспект Пятилеток, д.5, к.2</p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.97879 0.96582L6.28845 7.55743L9.18332 0.978089L9.68641 1.41828L9.35717 1.79457C9.68641 1.41828 9.68641 1.41828 9.68641 1.41828L9.68744 1.41918L9.68884 1.42041L9.69272 1.42385L9.70469 1.43463C9.71451 1.44355 9.72795 1.45592 9.74466 1.47171C9.77808 1.50327 9.82466 1.54853 9.88163 1.60711C9.99551 1.72421 10.1514 1.89506 10.3272 2.11684C10.678 2.55957 11.1121 3.21047 11.4465 4.04637C12.1221 5.73551 12.4347 8.1424 10.8573 11.034L9.18332 11.034C10.6062 8.42559 11.0923 5.85364 10.518 4.41777C10.175 3.56032 9.05512 3.6855 8.68205 4.5303L6.3573 9.79456C5.08812 7.04468 4.25091 5.35324 3.70733 4.31684C3.26565 3.47473 2.24824 3.47878 1.95843 4.38446C1.49789 5.82368 1.92624 8.41027 3.3573 11.034L1.71801 11.034C0.149211 8.15773 0.466577 5.76546 1.006 4.07969C1.27339 3.24407 1.64111 2.59176 1.94357 2.14645C2.09499 1.92353 2.23072 1.75149 2.33054 1.63321C2.38049 1.57404 2.42153 1.52821 2.45119 1.49609C2.46602 1.48002 2.478 1.46737 2.48684 1.45818L2.4977 1.447L2.50129 1.44336L2.50261 1.44203C2.50261 1.44203 2.50361 1.44103 2.85717 1.79457L2.50361 1.44103L2.97879 0.96582Z"
+                            fill="#FFAE43" />
+                    </svg>
+                    Пр. Большевиков
+                </p>
+                <p class="header__adress-time">
+                    с 10:00 до 21:00
+                </p>
+            </div>
+            <div class="header__adress">
+                <p>г. Санкт-Петербург, проспект Пятилеток, д.5, к.2</p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.97879 0.96582L6.28845 7.55743L9.18332 0.978089L9.68641 1.41828L9.35717 1.79457C9.68641 1.41828 9.68641 1.41828 9.68641 1.41828L9.68744 1.41918L9.68884 1.42041L9.69272 1.42385L9.70469 1.43463C9.71451 1.44355 9.72795 1.45592 9.74466 1.47171C9.77808 1.50327 9.82466 1.54853 9.88163 1.60711C9.99551 1.72421 10.1514 1.89506 10.3272 2.11684C10.678 2.55957 11.1121 3.21047 11.4465 4.04637C12.1221 5.73551 12.4347 8.1424 10.8573 11.034L9.18332 11.034C10.6062 8.42559 11.0923 5.85364 10.518 4.41777C10.175 3.56032 9.05512 3.6855 8.68205 4.5303L6.3573 9.79456C5.08812 7.04468 4.25091 5.35324 3.70733 4.31684C3.26565 3.47473 2.24824 3.47878 1.95843 4.38446C1.49789 5.82368 1.92624 8.41027 3.3573 11.034L1.71801 11.034C0.149211 8.15773 0.466577 5.76546 1.006 4.07969C1.27339 3.24407 1.64111 2.59176 1.94357 2.14645C2.09499 1.92353 2.23072 1.75149 2.33054 1.63321C2.38049 1.57404 2.42153 1.52821 2.45119 1.49609C2.46602 1.48002 2.478 1.46737 2.48684 1.45818L2.4977 1.447L2.50129 1.44336L2.50261 1.44203C2.50261 1.44203 2.50361 1.44103 2.85717 1.79457L2.50361 1.44103L2.97879 0.96582Z"
+                            fill="#FFAE43" />
+                    </svg>
+                    Пр. Большевиков
+                </p>
+                <p class="header__adress-time">
+                    с 10:00 до 21:00
+                </p>
+            </div>
+            <div class="header__button-block">
+                <button class="btn btn--green">
+                    Записаться
+                </button>
+            </div>
+            <div class="header__phone">
+                <a href="#">
+                    8 (912) 424 81 07
+                </a>
+            </div>
+            <div class="header__mob-block">
+                <a href="#">
+                    <img src="images/icons/mphone.svg" alt="">
+                </a>
+                <button class="burger">
+                    <img src="images/icons/brg.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class=" nav">
+            <nav class="nav__cont">
+                <button id="services-btn" class="nav__service-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12" fill="none">
+                        <rect width="19" height="2" fill="#6FC67B" />
+                        <rect y="5" width="19" height="2" fill="#6FC67B" />
+                        <rect y="10" width="13" height="2" fill="#6FC67B" />
+                    </svg>
+                    Услугии
+                </button>
+                <div class="nav__link nav__has-sublink">
+                    <a href="#" class="link">
+                        О нас
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="5" viewBox="0 0 7 5" fill="none">
+                            <path d="M3.86365 4.5L0.832559 0.75L6.89474 0.75L3.86365 4.5Z" fill="black"/>
+                            </svg>
+                    </a>
+                    <div class="nav__sublink-block">
+                        <a href="#" class="link">
+                            Тест
+                        </a>
+                    </div>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Врачи
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Препараты
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Оборудование
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        До/после
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Проблемы и решения
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Акции
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Цены
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Контакты
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Подарочный сертификат
+                    </a>
+                </div>
+                <div class="nav__link">
+                    <a href="#" class="link">
+                        Интернет-магазин
+                    </a>
+                </div>
+            </nav>
+            <div class="nav__buttons">
+                <a class="nav__phone" href="tel:+79124248107">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <path
+                            d="M12.6952 10.8637L12.6953 10.8637L12.6991 10.8522C12.9308 10.1424 14.0017 9.83994 14.6678 10.4677L17.1851 12.8401L17.528 12.4763L17.1851 12.8401C17.589 13.2208 17.6252 13.9133 17.172 14.4124L15.4769 16.0099L15.8199 16.3738L15.4769 16.0099C15.1477 16.3202 14.6514 16.4988 13.969 16.5C13.285 16.5012 12.4523 16.3224 11.5164 15.9604C9.64616 15.237 7.45215 13.8162 5.37463 11.8582C3.29802 9.9011 1.81654 7.83725 1.0635 6.08325C0.686588 5.20533 0.502489 4.42906 0.500025 3.79627C0.497591 3.1712 0.670449 2.71798 0.974478 2.4138L2.67759 0.808691C3.09948 0.411077 3.88454 0.37916 4.43201 0.820895L6.9363 3.18109C7.55201 3.76137 7.31003 4.73178 6.51066 4.96359L6.51063 4.96347L6.50008 4.96679C5.49879 5.2813 4.72333 6.3647 5.09186 7.45185C5.35616 8.46909 6.14917 9.53555 7.06224 10.3852C7.98465 11.2435 9.11622 11.9612 10.1313 12.2004L10.1313 12.2005L10.1435 12.2031C11.155 12.415 12.3282 11.9013 12.6952 10.8637Z"
+                            stroke="#6FC67B" />
+                    </svg>
+                </a>
+                <a href="#" class="nav__wp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                        <path
+                            d="M9.61643 16.4978C13.9956 16.496 17.5572 12.9335 17.559 8.55527C17.5598 6.43306 16.7344 4.43755 15.2349 2.93631C13.7353 1.435 11.7411 0.607851 9.61636 0.606934C5.23849 0.606934 1.67545 4.16978 1.67371 8.549C1.67311 9.94886 2.03885 11.3152 2.73391 12.5197L1.60712 16.6355L5.81759 15.531C6.97769 16.1638 8.28385 16.4973 9.61315 16.4978H9.61643Z"
+                            stroke="#6FC67B" />
+                        <path
+                            d="M13.6178 10.4443C13.5682 10.3615 13.4359 10.3118 13.2375 10.2124C13.039 10.1131 12.0633 9.63305 11.8814 9.56676C11.6995 9.50055 11.5671 9.46747 11.4349 9.66608C11.3026 9.86473 10.9222 10.3118 10.8065 10.4443C10.6907 10.5767 10.5749 10.5933 10.3765 10.4939C10.1781 10.3946 9.53861 10.185 8.78057 9.50889C8.19059 8.98264 7.79229 8.33278 7.67653 8.13409C7.56076 7.9354 7.66419 7.82803 7.76354 7.72907C7.85282 7.64012 7.96201 7.49722 8.06123 7.38137C8.16045 7.26552 8.19353 7.18268 8.25968 7.05033C8.32583 6.91782 8.29276 6.80197 8.24314 6.70262C8.19353 6.60328 7.79663 5.62643 7.63126 5.22905C7.47015 4.84207 7.30655 4.89449 7.18474 4.88838C7.06911 4.88257 6.93666 4.88135 6.80437 4.88135C6.67208 4.88135 6.45706 4.93102 6.27515 5.12971C6.09325 5.32839 5.58057 5.80853 5.58057 6.78531C5.58057 7.76216 6.29168 8.70585 6.39092 8.83828C6.49014 8.97079 7.79032 10.9753 9.78116 11.8349C10.2547 12.0394 10.6243 12.1615 10.9125 12.253C11.3879 12.4041 11.8206 12.3827 12.1625 12.3316C12.5438 12.2747 13.3367 11.8516 13.5021 11.388C13.6674 10.9243 13.6674 10.527 13.6178 10.4443Z"
+                            fill="#6FC67B" />
+                    </svg>
+                </a>
+                <button class="nav__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <g clip-path="url(#clip0_327_74)">
+                            <path
+                                d="M6.90723 1.08922C8.05815 1.08817 9.18353 1.42849 10.141 2.06714C11.0985 2.7058 11.845 3.61408 12.2862 4.67709C12.7273 5.7401 12.8433 6.91007 12.6194 8.03901C12.3955 9.16794 11.8418 10.2051 11.0284 11.0193C10.2149 11.8335 9.17827 12.3881 8.04954 12.6131C6.92081 12.838 5.75073 12.7231 4.68732 12.2829C3.62391 11.8427 2.71494 11.097 2.07542 10.1401C1.43589 9.18321 1.09453 8.05815 1.09453 6.90723C1.10151 5.36726 1.71599 3.89228 2.80442 2.80286C3.89286 1.71343 5.36727 1.0976 6.90723 1.08922ZM6.90723 0C5.54111 0 4.20567 0.405102 3.06978 1.16408C1.93389 1.92305 1.04858 3.00182 0.525785 4.26395C0.00299289 5.52608 -0.133793 6.91489 0.132724 8.25476C0.39924 9.59463 1.05709 10.8254 2.02308 11.7914C2.98908 12.7574 4.21983 13.4152 5.5597 13.6817C6.89957 13.9483 8.28838 13.8115 9.55051 13.2887C10.8126 12.7659 11.8914 11.8806 12.6504 10.7447C13.4094 9.60879 13.8145 8.27335 13.8145 6.90723C13.8145 5.07532 13.0867 3.31844 11.7914 2.02308C10.496 0.727724 8.73914 0 6.90723 0Z"
+                                fill="#6FC67B" />
+                            <path
+                                d="M16.827 16.094L12.2544 11.251L11.4999 12.0002L16.0725 16.8432C16.1217 16.8927 16.1802 16.9321 16.2446 16.959C16.309 16.986 16.3781 17 16.4479 17.0002C16.5177 17.0005 16.5869 16.987 16.6515 16.9605C16.7161 16.934 16.7748 16.895 16.8244 16.8459C16.8739 16.7967 16.9133 16.7382 16.9402 16.6738C16.9672 16.6094 16.9812 16.5403 16.9814 16.4705C16.9817 16.4007 16.9681 16.3315 16.9417 16.2669C16.9152 16.2023 16.8762 16.1436 16.827 16.094Z"
+                                fill="#6FC67B" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_327_74">
+                                <rect width="17" height="17" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu">
+                <div class="menu__links">
+                    <a  class="menu__link menu__js-hover">
+                        Лазерная косметология
+                    </a>
+                    <a  class="menu__link menu__js-hover">
+                        Инъекционная косметология
+                    </a>
+                    <a  class="menu__link menu__js-hover">
+                        Эстетическая косметология
+                    </a>
+                    <a  class="menu__link menu__js-hover">
+                        Нитевой лифтинг
+                    </a>
+                    <a  class="menu__link menu__js-hover">
+                        Интимное омоложение
+                    </a>
+                    <a  class="menu__link menu__js-hover">
+                        Массаж
+                    </a>
+                    <a  class="menu__link menu__link--dark">
+                        Мужчинам
+                    </a>
+
+                </div>
+                <div class="menu__tabs">
+                    <div class="menu__tab menu__tab-show">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__tab">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__tab">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__tab">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__tab">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__tab">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <button class="mobile-menu__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <path d="M7.33333 0.666667L0.666667 7.33333M0.666675 0.666667L7.33333 7.33333" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Услуги
+                </div>
+                <div class="mobile-menu__acc-block acc-cont">
+                    <div class="mobile-menu__subtitle acc-btn">
+                        Лазерная косметология
+                    </div>
+                    <div class="mobile-menu__acc-text acc-text">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__acc-block acc-cont">
+                    <div class="mobile-menu__subtitle acc-btn">
+                        Инъекционная косметология
+                    </div>
+                    <div class="mobile-menu__acc-text acc-text">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__acc-block acc-cont">
+                    <div class="mobile-menu__subtitle acc-btn">
+                        Эстетическая косметология
+                    </div>
+                    <div class="mobile-menu__acc-text acc-text">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__acc-block acc-cont">
+                    <div class="mobile-menu__subtitle acc-btn">
+                        Нитевой лифтинг
+                    </div>
+                    <div class="mobile-menu__acc-text acc-text">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__acc-block acc-cont">
+                    <div class="mobile-menu__subtitle acc-btn">
+                        Интимное омоложение
+                    </div>
+                    <div class="mobile-menu__acc-text acc-text">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__acc-block acc-cont">
+                    <div class="mobile-menu__subtitle acc-btn">
+                        Массаж
+                    </div>
+                    <div class="mobile-menu__acc-text acc-text">
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Эпиляция
+                            </a>
+
+                            <a href="" class="menu__column-link">
+                                Ноги
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подмышки
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лицо
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Подбородок
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Зона бикини
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Живот
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерная шлифовка СО2
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Фотоомоложение
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лечение акне
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное удаление сосудов
+                            </a>
+
+                            <a href="" class="menu__column-link ">
+                                Удаление сосудов на лице
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лазерное удаление сосудистых звездочек
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление носовых сосудов
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудистых звездочек на ногах
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Удаление сосудов на ногах
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение розацея
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение грибка ногтей
+                            </a>
+
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Лазерное лечение купероза
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Лечение купероза на лице
+                            </a>
+                        </div>
+                        <div class="menu__column">
+                            <a href="#" class="menu__column-title">
+                                Удаление пигментных пятен лазером
+                            </a>
+                            <a href="" class="menu__column-link">
+                                Пигментация на лице
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mobile-menu__block">
+                <a href="#" class="mobile-menu__unique-link">
+                    Мужчинам
+                </a>
+            </div>
+            
+            <div class="mobile-menu__block acc-cont" >
+                <div class="mobile-menu__title acc-btn">
+                    О нас
+                </div>
+                <div class="mobile-menu__links acc-text">
+                    <a href="">Тест</a>
+                    <a href="">Тест</a>
+                    <a href="">Тест</a>
+
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Врачи
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Препараты
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Оборудование
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    До/после
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Проблемы и решения
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Акции
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Цены
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Контакты
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Подарочный сертификат
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="mobile-menu__title">
+                    Интернет-магазин
+                </div>
+            </div>
+            <div class="mobile-menu__block">
+                <div class="nav__buttons">
+                    <a class="nav__phone" href="tel:+79124248107">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path d="M12.6952 10.8637L12.6953 10.8637L12.6991 10.8522C12.9308 10.1424 14.0017 9.83994 14.6678 10.4677L17.1851 12.8401L17.528 12.4763L17.1851 12.8401C17.589 13.2208 17.6252 13.9133 17.172 14.4124L15.4769 16.0099L15.8199 16.3738L15.4769 16.0099C15.1477 16.3202 14.6514 16.4988 13.969 16.5C13.285 16.5012 12.4523 16.3224 11.5164 15.9604C9.64616 15.237 7.45215 13.8162 5.37463 11.8582C3.29802 9.9011 1.81654 7.83725 1.0635 6.08325C0.686588 5.20533 0.502489 4.42906 0.500025 3.79627C0.497591 3.1712 0.670449 2.71798 0.974478 2.4138L2.67759 0.808691C3.09948 0.411077 3.88454 0.37916 4.43201 0.820895L6.9363 3.18109C7.55201 3.76137 7.31003 4.73178 6.51066 4.96359L6.51063 4.96347L6.50008 4.96679C5.49879 5.2813 4.72333 6.3647 5.09186 7.45185C5.35616 8.46909 6.14917 9.53555 7.06224 10.3852C7.98465 11.2435 9.11622 11.9612 10.1313 12.2004L10.1313 12.2005L10.1435 12.2031C11.155 12.415 12.3282 11.9013 12.6952 10.8637Z" stroke="#6FC67B"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="nav__wp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                            <path d="M9.61643 16.4978C13.9956 16.496 17.5572 12.9335 17.559 8.55527C17.5598 6.43306 16.7344 4.43755 15.2349 2.93631C13.7353 1.435 11.7411 0.607851 9.61636 0.606934C5.23849 0.606934 1.67545 4.16978 1.67371 8.549C1.67311 9.94886 2.03885 11.3152 2.73391 12.5197L1.60712 16.6355L5.81759 15.531C6.97769 16.1638 8.28385 16.4973 9.61315 16.4978H9.61643Z" stroke="#6FC67B"></path>
+                            <path d="M13.6178 10.4443C13.5682 10.3615 13.4359 10.3118 13.2375 10.2124C13.039 10.1131 12.0633 9.63305 11.8814 9.56676C11.6995 9.50055 11.5671 9.46747 11.4349 9.66608C11.3026 9.86473 10.9222 10.3118 10.8065 10.4443C10.6907 10.5767 10.5749 10.5933 10.3765 10.4939C10.1781 10.3946 9.53861 10.185 8.78057 9.50889C8.19059 8.98264 7.79229 8.33278 7.67653 8.13409C7.56076 7.9354 7.66419 7.82803 7.76354 7.72907C7.85282 7.64012 7.96201 7.49722 8.06123 7.38137C8.16045 7.26552 8.19353 7.18268 8.25968 7.05033C8.32583 6.91782 8.29276 6.80197 8.24314 6.70262C8.19353 6.60328 7.79663 5.62643 7.63126 5.22905C7.47015 4.84207 7.30655 4.89449 7.18474 4.88838C7.06911 4.88257 6.93666 4.88135 6.80437 4.88135C6.67208 4.88135 6.45706 4.93102 6.27515 5.12971C6.09325 5.32839 5.58057 5.80853 5.58057 6.78531C5.58057 7.76216 6.29168 8.70585 6.39092 8.83828C6.49014 8.97079 7.79032 10.9753 9.78116 11.8349C10.2547 12.0394 10.6243 12.1615 10.9125 12.253C11.3879 12.4041 11.8206 12.3827 12.1625 12.3316C12.5438 12.2747 13.3367 11.8516 13.5021 11.388C13.6674 10.9243 13.6674 10.527 13.6178 10.4443Z" fill="#6FC67B"></path>
+                        </svg>
+                    </a>
+                    <button class="nav__search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <g clip-path="url(#clip0_327_74)">
+                                <path d="M6.90723 1.08922C8.05815 1.08817 9.18353 1.42849 10.141 2.06714C11.0985 2.7058 11.845 3.61408 12.2862 4.67709C12.7273 5.7401 12.8433 6.91007 12.6194 8.03901C12.3955 9.16794 11.8418 10.2051 11.0284 11.0193C10.2149 11.8335 9.17827 12.3881 8.04954 12.6131C6.92081 12.838 5.75073 12.7231 4.68732 12.2829C3.62391 11.8427 2.71494 11.097 2.07542 10.1401C1.43589 9.18321 1.09453 8.05815 1.09453 6.90723C1.10151 5.36726 1.71599 3.89228 2.80442 2.80286C3.89286 1.71343 5.36727 1.0976 6.90723 1.08922ZM6.90723 0C5.54111 0 4.20567 0.405102 3.06978 1.16408C1.93389 1.92305 1.04858 3.00182 0.525785 4.26395C0.00299289 5.52608 -0.133793 6.91489 0.132724 8.25476C0.39924 9.59463 1.05709 10.8254 2.02308 11.7914C2.98908 12.7574 4.21983 13.4152 5.5597 13.6817C6.89957 13.9483 8.28838 13.8115 9.55051 13.2887C10.8126 12.7659 11.8914 11.8806 12.6504 10.7447C13.4094 9.60879 13.8145 8.27335 13.8145 6.90723C13.8145 5.07532 13.0867 3.31844 11.7914 2.02308C10.496 0.727724 8.73914 0 6.90723 0Z" fill="#6FC67B"></path>
+                                <path d="M16.827 16.094L12.2544 11.251L11.4999 12.0002L16.0725 16.8432C16.1217 16.8927 16.1802 16.9321 16.2446 16.959C16.309 16.986 16.3781 17 16.4479 17.0002C16.5177 17.0005 16.5869 16.987 16.6515 16.9605C16.7161 16.934 16.7748 16.895 16.8244 16.8459C16.8739 16.7967 16.9133 16.7382 16.9402 16.6738C16.9672 16.6094 16.9812 16.5403 16.9814 16.4705C16.9817 16.4007 16.9681 16.3315 16.9417 16.2669C16.9152 16.2023 16.8762 16.1436 16.827 16.094Z" fill="#6FC67B"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_327_74">
+                                    <rect width="17" height="17" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider">
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__slide">
+                        <div class="slider__background">
+                            <div class="slider__green-block"></div>
+                        </div>
+                        <div class="slider__content container">
+                            <div class="slider__text-block">
+                                <div class="slider__title">
+                                    косметологическая клиника <b>New clinic</b>
+                                </div>
+                                <div class="slider__block">
+                                    <div class="slider__subtitle">
+                                        Скидки на контурную пластику губ
+                                    </div>
+                                    <div class="slider__price-block">
+                                        <div class="slider__price">
+                                            <p>Кнтурная пластика губ за</p>
+                                            <p class="price">10 500 ₽</p>
+                                        </div>
+                                        <a href="#" class="btn btn--green">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__img">
+                                <img src="images/tnn.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <div class="slider__background">
+                            <div class="slider__green-block"></div>
+                        </div>
+                        <div class="slider__content container">
+                            <div class="slider__text-block">
+                                <div class="slider__title">
+                                    косметологическая клиника <b>New clinic</b>
+                                </div>
+                                <div class="slider__block">
+                                    <div class="slider__subtitle">
+                                        Скидки на контурную пластику губ
+                                    </div>
+                                    <div class="slider__price-block">
+                                        <div class="slider__price">
+                                            <p>Кнтурная пластика губ за</p>
+                                            <p class="price">10 500 ₽</p>
+                                        </div>
+                                        <a href="#" class="btn btn--green">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__img">
+                                <img src="images/tnn.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container slider__nav ">
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="28" viewBox="0 0 15 28" fill="none">
+                            <path d="M14 27L1 14L14 1" stroke="#6FC67B"/>
+                            </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="28" viewBox="0 0 15 28" fill="none">
+                            <path d="M14 27L1 14L14 1" stroke="#6FC67B"/>
+                            </svg>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </main>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/lozad.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
