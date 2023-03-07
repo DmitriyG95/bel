@@ -773,6 +773,7 @@ body.menu-open {
 }
 
 .nav__link .link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -781,6 +782,8 @@ body.menu-open {
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .nav__link .link:hover {
